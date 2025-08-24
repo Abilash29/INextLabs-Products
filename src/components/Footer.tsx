@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Twitter, Linkedin, Github, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -22,9 +23,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img 
+              <Image 
                 src="https://cdn.inextlabs.ai/images/general/inextlabs-logo-footer.webp" 
                 alt="iNextLabs" 
+                width={100}
+                height={100}
                 className="h-8 w-auto"
               />
             </div>

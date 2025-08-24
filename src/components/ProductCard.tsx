@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Sparkles, BarChart3, PieChart, MessageSquare } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface ProductCardProps {
   title: string;

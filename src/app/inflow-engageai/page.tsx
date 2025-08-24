@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { PieChart, BarChart3, TrendingUp, Eye, CheckCircle, ArrowRight, Palette, Share2 } from 'lucide-react';
+import { PieChart, BarChart3, TrendingUp, Eye, CheckCircle, Palette, Share2 } from 'lucide-react';
 
 export default function EngageAIPage() {
   const features = [
@@ -56,10 +56,10 @@ export default function EngageAIPage() {
                 Data Visualization Platform
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              The AI Revolution That's Making Chatbots Obsolete
+              The AI Revolution That&apos;s Making Chatbots Obsolete
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Meet the next generation of AI agents that don't just respond, but sell, solve, and scale your success 24/7. Turn every conversation into results with purpose-built agents that convert, resolve, and transform your business.
+              Meet the next generation of AI agents that don&apos;t just respond, but sell, solve, and scale your success 24/7. Turn every conversation into results with purpose-built agents that convert, resolve, and transform your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-orange-500 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:bg-orange-600 hover:shadow-lg hover:scale-105">

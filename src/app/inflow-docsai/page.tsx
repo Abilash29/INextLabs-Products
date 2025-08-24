@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { Sparkles, FileText, MessageSquare, Users, Zap, CheckCircle, ArrowRight } from 'lucide-react';
+import { Sparkles, FileText, MessageSquare, Users, CheckCircle } from 'lucide-react';
 
 export default function DocsAIPage() {
   const features = [

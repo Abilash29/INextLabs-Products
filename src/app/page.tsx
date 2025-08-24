@@ -1,7 +1,8 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
-import { Sparkles, BarChart3, PieChart, MessageSquare, ArrowRight, CheckCircle, Users, Zap } from 'lucide-react';
+import { Sparkles, BarChart3, PieChart, MessageSquare, CheckCircle, Users, Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   const products = [
@@ -143,9 +144,11 @@ export default function Home() {
               {/* Right Section - Illustration */}
               <div className="lg:col-span-1 flex justify-center lg:justify-end">
                 <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-                  <img 
+                  <Image 
                     src="/gen-ai.png" 
                     alt="Generative AI Illustration" 
+                    width={320}
+                    height={320}
                     className="w-full h-full object-contain rounded-lg"
                   />
                 </div>

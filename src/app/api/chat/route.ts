@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
       category: category
     });
 
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { 
         success: false, 

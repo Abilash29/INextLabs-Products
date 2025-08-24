@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { Users, Target, Award, Globe, Lightbulb, Shield } from 'lucide-react';
+import { Target, Lightbulb, Shield } from 'lucide-react';
 
 export default function AboutPage() {
   const values = [

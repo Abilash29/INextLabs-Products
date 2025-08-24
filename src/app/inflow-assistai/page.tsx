@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { MessageSquare, Send, Paperclip, Search, MoreVertical, User, Bot, FileText, Image, Video, Mic, Smile } from 'lucide-react';
+import { MessageSquare, Send, Paperclip, Search, MoreVertical, User, Bot, FileText, Image as ImageIcon } from 'lucide-react';
 
 interface Message {
   id: string;
@@ -19,6 +19,7 @@ interface Message {
 }
 
 export default function AssistAIPage() {
+  const [messageId, setMessageId] = useState(1);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -46,8 +47,11 @@ export default function AssistAIPage() {
   const handleSendMessage = async () => {
     if (!inputText.trim()) return;
 
+    const newId = (messageId + 1).toString();
+    setMessageId(messageId + 1);
+
     const userMessage: Message = {
-      id: Date.now().toString(),
+      id: newId,
       text: inputText,
       sender: 'user',
       timestamp: new Date(),
@@ -61,7 +65,7 @@ export default function AssistAIPage() {
     // Simulate AI response delay
     setTimeout(() => {
       const aiMessage: Message = {
-        id: (Date.now() + 1).toString(),
+        id: (messageId + 2).toString(),
         text: `I understand you're asking about "${inputText}". Let me help you with that. This is a simulated AI response to demonstrate the chat interface functionality.`,
         sender: 'ai',
         timestamp: new Date(),
@@ -70,6 +74,7 @@ export default function AssistAIPage() {
 
       setMessages(prev => [...prev, aiMessage]);
       setIsTyping(false);
+      setMessageId(messageId + 2);
     }, 2000);
   };
 
@@ -77,8 +82,11 @@ export default function AssistAIPage() {
     const files = event.target.files;
     if (files && files.length > 0) {
       const file = files[0];
+      const newId = (messageId + 1).toString();
+      setMessageId(messageId + 1);
+      
       const fileMessage: Message = {
-        id: Date.now().toString(),
+        id: newId,
         text: `Uploaded: ${file.name}`,
         sender: 'user',
         timestamp: new Date(),
@@ -295,7 +303,7 @@ export default function AssistAIPage() {
                   <Paperclip className="w-5 h-5" />
                 </button>
                 <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors">
-                  <Image className="w-5 h-5" />
+                  <ImageIcon className="w-5 h-5" />
                 </button>
                                     <input
                     type="text"

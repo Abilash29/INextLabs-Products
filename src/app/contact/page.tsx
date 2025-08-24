@@ -73,7 +73,7 @@ export default function ContactPage() {
               Get in <span style={{ background: 'linear-gradient(to right, #2563eb, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Touch</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Ready to transform your business with AI? Let's discuss how iNextLabs can help you achieve your goals.
+              Ready to transform your business with AI? Let&apos;s discuss how iNextLabs can help you achieve your goals.
             </p>
           </div>
         </div>
@@ -181,11 +181,11 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-2xl font-bold text-green-800 mb-4">Message Sent Successfully!</h3>
                   <p className="text-green-700 mb-6">
-                    Thank you for reaching out to us. We've received your message and will get back to you within 24 hours.
+                    Thank you for reaching out to us. We&apos;ve received your message and will get back to you within 24 hours.
                   </p>
                   <div className="bg-white rounded-lg p-4 border border-green-200">
                     <p className="text-sm text-green-600">
-                      <strong>What's next?</strong> Our team will review your inquiry and contact you with personalized solutions for your business needs.
+                      <strong>What&apos;s next?</strong> Our team will review your inquiry and contact you with personalized solutions for your business needs.
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
               <p className="text-gray-600 mb-8">
-                Get in touch with us through any of these channels. We're here to help you succeed.
+                Get in touch with us through any of these channels. We&apos;re here to help you succeed.
               </p>
               
               <div className="space-y-6">

@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { BarChart3, TrendingUp, Database, Zap, CheckCircle, ArrowRight, PieChart, LineChart } from 'lucide-react';
+import { BarChart3, TrendingUp, Database, Zap, CheckCircle, PieChart, LineChart } from 'lucide-react';
 
 export default function InsightsAIPage() {
   const features = [
@@ -59,7 +59,7 @@ export default function InsightsAIPage() {
               Stop Drowning in Data.Start Dominating with Intelligence.
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              InFlow InsightsAI transforms scattered data into clear predictions and actionable insights that drive real growth. While traditional tools show what happened, InFlow forecasts what's next and tells you exactly how to act.
+              InFlow InsightsAI transforms scattered data into clear predictions and actionable insights that drive real growth. While traditional tools show what&apos;s next and tells you exactly how to act.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-orange-500 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:bg-orange-600 hover:shadow-lg hover:scale-105">
@@ -217,7 +217,7 @@ export default function InsightsAIPage() {
       <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Unlock Your Data's Potential?
+            Ready to Unlock Your Data&apos;s Potential?
           </h2>
           <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
             Transform your business with AI-powered insights. Start analyzing your data today.

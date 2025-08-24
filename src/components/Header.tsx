@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +38,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <img 
+            <Image 
               src="https://cdn.inextlabs.ai/images/general/inextlabs-logo-footer.webp" 
               alt="iNextLabs" 
+              width={100}
+              height={100}
               className="h-12 w-auto"
             />
           </Link>

@@ -1,14 +1,16 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig: NextConfig = {
-  output: "export", // static HTML export for GitHub Pages
-  basePath: isProd ? "/iNextLabs" : "",
-  assetPrefix: isProd ? "/iNextLabs/" : "",
+  // Configuration optimized for Vercel deployment
   images: {
-    unoptimized: true, // GitHub Pages doesn't support Next.js image optimization
+    domains: ['cdn.inextlabs.ai'],
   },
+  // Prevent hydration mismatches
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
+  },
+  // Ensure proper SSR
+  reactStrictMode: true,
 };
 
 export default nextConfig;

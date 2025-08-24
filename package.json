@@ -4,12 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out" 
+    "lint": "eslint"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.7",
@@ -28,9 +25,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.12",
     "typescript": "^5"
-  },
-  "homepage": "https://abilash29.github.io/iNextLabs"
+  }
 }
